@@ -29,8 +29,8 @@ function displayMatches(search, cities) {
   const result = findMatches(search, cities);
   const html = result.map(place => {
     const regex = new RegExp(search, 'gi');
-    const cityName= place.city.replace(regex, `<span class="hl">${search}</span>`); 
-    const state = place.state.replace(regex, `<span>${search}</span>`)
+    const cityName= place.city.replace(regex, `<span class="bold">${search}</span>`); 
+    const state = place.state.replace(regex, `<span class="bold">${search}</span>`)
     return`
     <li>
     <span class="name">${cityName}, ${state} </span>

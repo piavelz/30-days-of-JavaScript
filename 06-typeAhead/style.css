@@ -104,9 +104,11 @@ body {
   transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
   background: linear-gradient(to bottom, #dfdfdf 0%, #f9f9f9 100%);
 }
+.bold {
+  font-weight: bold;
+}
 
 .name {
-  font-weight: bold;
   font-size: 1.1rem;
 }
 .population {
