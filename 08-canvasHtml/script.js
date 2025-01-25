@@ -6,7 +6,7 @@ ctx.strokeStyle = '#BADA55';
 ctx.lineJoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 100;
-ctx.globalCompositeOperation = 'multiply';
+// ctx.globalCompositeOperation = 'multiply';
 
 let isDrawing = false;
 let lastX = 0;
@@ -24,7 +24,7 @@ function draw(e){
     //go to
     ctx.lineTo(e.offsetX,e.offsetY);
     ctx.stroke();
-    // ctx.lineWidth = 100;
+
     [lastX,lastY] =[e.offsetX,e.offsetY];
     hue ++;
     if (hue >= 360){
@@ -38,9 +38,6 @@ function draw(e){
     }else{
         ctx.lineWidth--;
     }
-
-
-
 }
 
 
