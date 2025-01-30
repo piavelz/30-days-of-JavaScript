@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: rgb(179, 75, 238);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(179, 75, 238, 1) 0%,
+    rgba(93, 114, 232, 1) 87%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(179, 75, 238, 1) 0%,
+    rgba(93, 114, 232, 1) 87%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(179, 75, 238, 1) 0%,
+    rgba(93, 114, 232, 1) 87%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b34bee",endColorstr="#5d72e8",GradientType=1);
+}
+
+main {
+  width: 60%;
+  height: fit-content;
+  padding: 80px;
+  margin: 20px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.044);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.282);
+}
+
+h1 {
+  height: 150px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 2.5rem;
+  color: rgb(0, 0, 0);
+}
+.item {
+  font-weight: bold;
+  margin: 40px auto 20px auto;
+}
+.slide {
+  width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  margin-top: 60px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.slide-left {
+  float: left;
+  margin-right: 20px;
+}
+.slide-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.slide-left.slide {
+  transform: translate(-30%) scale(0.95);
+}
+.slide-right.slide {
+  transform: translate(30%) scale(0.95);
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translate(0%) scale(1);
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 80%;
+    min-width: 360px;
+    padding: 40px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  img {
+    width: 200px;
+    max-height: 200px;
+  }
+}
