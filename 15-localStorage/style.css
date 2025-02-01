@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://assets.simpleviewcms.com/simpleview/image/fetch/c_fill,h_1080,w_1920/f_jpg/q_65/https://hemsedal.com/uploads/images/middag.jpg?_a=BATCtdfi0")
+    center no-repeat;
+  background-size: cover;
+  backdrop-filter: brightness(0.5);
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  background-image: url(./iconfood.svg);
+  background-size: cover;
+  position: relative;
+  top: -300px;
+}
+
+.container {
+  width: 300px;
+  height: auto;
+  min-height: 250px;
+  max-height: 450px;
+  overflow: overlay;
+  padding: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 0px 0px 14px rgba(139, 139, 139, 0.426);
+}
+
+.container::-webkit-scrollbar {
+  width: 8px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(249, 249, 249, 0.871);
+  border: 0.5px solid rgba(137, 137, 137, 0.546);
+  border-radius: 2px;
+}
+.container::-webkit-scrollbar-track {
+  background-color: rgba(137, 137, 137, 0.546);
+}
+h2 {
+  margin-bottom: 10px;
+}
+
+.container__form {
+  display: flex;
+  gap: 10px;
+}
+
+.container__list {
+  list-style: none;
+  width: 100%;
+  padding: 20px 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.375);
+}
+
+.container__list li {
+  padding: 8px 0;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #858585;
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 2px;
+}
+
+input[type="submit"] {
+  background-color: #121212;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 2px;
+}
+
+.container__list input + label:before {
+  content: "⬜";
+  margin-right: 10px;
+}
+.container__list input:checked + label:before {
+  content: "🖤";
+}
+
+input[type="checkbox"] {
+  display: none;
+}
