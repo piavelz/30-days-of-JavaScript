@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #a23bd2;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      #a23bd2 24%,
+      #b273ca 25%,
+      #b273ca 28%,
+      #a23bd2 29%,
+      #a23bd2 36%,
+      #b273ca 36%,
+      #b273ca 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #a23bd2 24%,
+      #b273ca 25%,
+      #b273ca 28%,
+      #a23bd2 29%,
+      #a23bd2 36%,
+      #b273ca 36%,
+      #b273ca 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      #b273ca 10%,
+      #a23bd2 11%,
+      #a23bd2 23%,
+      #b273ca 24%,
+      #b273ca 30%,
+      #a23bd2 31%,
+      #a23bd2 43%,
+      #b273ca 44%,
+      #b273ca 50%,
+      #a23bd2 51%,
+      #a23bd2 63%,
+      #b273ca 64%,
+      #b273ca 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      #b273ca 5%,
+      #a23bd2 6%,
+      #a23bd2 15%,
+      #b273ca 16%,
+      #b273ca 20%,
+      #a23bd2 21%,
+      #a23bd2 30%,
+      #b273ca 31%,
+      #b273ca 35%,
+      #a23bd2 36%,
+      #a23bd2 45%,
+      #b273ca 46%,
+      #b273ca 49%,
+      transparent 50%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      #b273ca 5%,
+      #a23bd2 6%,
+      #a23bd2 15%,
+      #b273ca 16%,
+      #b273ca 20%,
+      #a23bd2 21%,
+      #a23bd2 30%,
+      #b273ca 31%,
+      #b273ca 35%,
+      #a23bd2 36%,
+      #a23bd2 45%,
+      #b273ca 46%,
+      #b273ca 49%,
+      transparent 50%,
+      transparent
+    );
+  background-size: 100px 50px;
+}
+
+.voiceinator {
+  padding: 2rem;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 1rem;
+  position: relative;
+  background: white;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  width: calc(100% + 4rem);
+  margin: -2rem 0 2rem -2rem;
+  padding: 0.5rem;
+  background: #1f002c;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(248, 248, 248);
+  text-shadow: 3px 3px 0 #000000;
+}
+
+.voiceinator input,
+.voiceinator button,
+.voiceinator select,
+.voiceinator textarea {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  border: 0;
+  border-radius: 10px;
+  background: #f6f6f6ce;
+  outline: 0;
+}
+
+textarea {
+  height: 10rem;
+}
+
+.voiceinator button {
+  background: #1f002c;
+  color: white;
+  border: 0;
+  width: 49%;
+  float: left;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2rem;
+}
+.voiceinator button:hover {
+  background-color: #460e5e;
+}
+
+.voiceinator button:active {
+  top: 2px;
+}
+
+.voiceinator button:nth-of-type(1) {
+  margin-right: 2%;
+}
